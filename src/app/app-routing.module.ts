@@ -8,11 +8,11 @@ import { ProgramsComponent } from './programs/programs.component';
 import { ProgramComponent } from './shared/program/program.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'home',
-  //   pathMatch: 'full',
-  // },
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
   {
     path: 'home', component: HomeComponent
   },
