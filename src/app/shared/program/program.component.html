@@ -1,4 +1,4 @@
-<app-banner [page]="program.service" [pageName]="program.service"></app-banner>
+<app-banner [page]="programId" [pageName]="program.service"></app-banner>
 <div class="blog-area single full-blog full-blog default-padding">
     <div class="container">
         <div class="blog-items">
@@ -8,11 +8,11 @@
 
                         <div class="blog-item-box">
                             <!-- Start Post Thumb -->
-                            <div class="thumb">
+                            <!-- <div class="thumb">
                                 <a href="#">
                                     <img src="assets/img/{{programId}}_banner.png" alt="Thumb">
                                 </a>
-                            </div>
+                            </div> -->
                             <!-- Start Post Thumb -->
 
                             <div class="info" *ngIf="programId == 'bloodbank'">
