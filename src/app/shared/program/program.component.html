@@ -1,0 +1,74 @@
+<app-banner [page]="program.service" [pageName]="program.service"></app-banner>
+<div class="blog-area single full-blog full-blog default-padding">
+    <div class="container">
+        <div class="blog-items">
+            <div class="row">
+                <div class="blog-content wow fadeInUp col-lg-10 offset-lg-1 col-md-12">
+                    <div class="item">
+
+                        <div class="blog-item-box">
+                            <!-- Start Post Thumb -->
+                            <div class="thumb">
+                                <a href="#">
+                                    <img src="assets/img/{{programId}}_banner.png" alt="Thumb">
+                                </a>
+                            </div>
+                            <!-- Start Post Thumb -->
+
+                            <div class="info" *ngIf="programId == 'bloodbank'">
+                                
+                                <p>
+                                    Blood is the most precious gift that anyone can give to once life. The decision to donate blood can save a life or even more, when the blood is separated into its components - Red cells,  Platelets & Plasma - which can be used individually for patients with specific conditions. Hence our trust decided to establish this blood bank.
+                                </p>
+                                <p>Our trust identified the importance of Blood Banks and considering the gap between need and availability decided to establish a Blood Bank  
+                                </p>
+                                <h3>Why is Blood Bank important?</h3>
+                                <p>
+                                    A blood bank plays an important role in patient care. Transfusion-related errors have serious consequences for patients, including death. Proper identification of the patient and blood products is critical in avoiding such transfusion-related reactions.
+                                </p>
+                                <blockquote>
+                                    Appreciating the significance of having a quality blood bank,  Sri Karuturi Satyanarayana Murthy, Chairman & Managing Director of Apex Frozen Foods limited, Kakinada & his family members have voulenteered to support "Rotary Central blood Bank" emotionally & financially.  A Big thanks to them. As a token of gratitude and appreciation, the blood bank is named as "Karuturi Rotary Central Blood Bank".
+                                </blockquote>
+                                <h4>OBJECTIVES :</h4>
+                                <ul>
+                                    <li *ngFor="let obj of program.objectives">{{ obj}} </li>
+                                </ul>
+                            </div>
+
+                            <div class="info" *ngIf="programId == 'physiotherapy'">
+                                
+                                <p>
+                                    Physiotherapy is treatment to restore, maintain and make most of the patient's mobility function & well being. Physiotherapy helps through physical rehabilitation, injury prevention and improvement of Health and fitness. Physiotherapists get you involved in your own recovery. Physiotherapy when done properly it can prevent major Surgeries.
+                                </p>
+                                
+                                <h4>OBJECTIVES :</h4>
+                                <ul>
+                                    <li *ngFor="let obj of program.objectives">{{ obj}} </li>
+                                </ul>
+                            </div>
+
+                            <div class="info" *ngIf="programId == 'skilldevelopment'">
+                                
+                                <p>
+                                    Skill development is a vital tool to empower people to safeguard their future and for the overall development of an individual. It is an important aspect that enhances employment in today's globalisation. Skills are as essential as one's academic status. Education and skill development should now go hand in hand.
+                                </p>
+                                <p>
+                                    Skill development is for everyone. Our vision is to help people identify their  skillgap and ensure they develop the skills, ability to execute plans and achieve their goals through :
+                                </p>
+
+                                <ul>
+                                    <li *ngFor="let c of program.courses">{{ c }} </li>
+                                </ul>
+                                
+                                <h4>OBJECTIVES :</h4>
+                                <ul>
+                                    <li *ngFor="let obj of program.objectives">{{ obj}} </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
