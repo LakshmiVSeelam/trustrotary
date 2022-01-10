@@ -1,8 +1,8 @@
 <app-banner [page]="'about'" [pageName]="'about us'"></app-banner>
 <!-- <app-about-section></app-about-section> -->
-<div class="about-area mb-5" *ngFor="let section of sections, let i=index">
-    <div class="container">
-        <div class="row align-center border-bottom py-3">
+<div class="about-area my-5" *ngFor="let section of sections, let i=index">
+    <div class="container  rounded-0 bg-white shadow">
+        <div class="row align-center">
 
             <div class="col-lg-6 text-center" [ngClass]="i % 2 === 0 ? '' : 'order-last' ">
                 <div class="thumb m-0">
@@ -13,7 +13,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-6 info">
+            <div class="col-lg-6 info p-5">
                 <h5 class="h2">{{ section.name }}</h5>
                 <p>
                     {{ section.desc }}
@@ -25,28 +25,4 @@
 </div>
 <app-mission-section></app-mission-section>
 
-<div class="mission-area default-padding">
-    <div class="container">
-        <div class="row align-center">
 
-            <div class="col-lg-4 text-center">
-                <div class="thumb m-0">
-                    <img src="assets/img/trust_logo.png" alt="Thumb">
-                </div>
-            </div>
-
-            <div class="col-lg-8 info">
-                <h3 class="font-weight-bold">Our logo is a reflection of our Vision and Mission</h3>
-                <ul>
-                    <li>The number 16 resonates with wisdom, independence, and family. 16 is a number of  introspection. It is wise, intuitive, and tends to be independent. 
-                        <span class="font-weight-bold">Hence the 16 spokes</span></li>
-                    <li>Blood globally represents life itself, as the element of divine life that functions within the human body closely tied with passion, but also with death, war & sacrifice. <span class="font-weight-bold">Hence the drop of blood emoji</span></li>
-                    <li>Physiotherapy encompasses rehabilitation, injury prevention and health promotion. It's the spine, or backbone of active and healthy life. More often than not physiotherapy helps prevent major Surgeries. 
-                        <span class="font-weight-bold">Hence the human with backbone emoji</span></li>
-                    <li>The hand that cares is holier than the lips that pray. Skill development is a vital tool to empower people, to safeguard their future and for the overall development of an individual and it needs motherly care for improving expertise in different fields of knowledge. <span class="font-weight-bold">Hence the hand emoji.</span></li>
-                </ul>
-            </div>
-            
-        </div>
-    </div>
-</div>
