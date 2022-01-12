@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  carousel_data : any = [
+    {'img': 'bloodbankcarousel'},
+    {'img': 'physiocarousel'},
+    {'img': 'skillcarousel'}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {

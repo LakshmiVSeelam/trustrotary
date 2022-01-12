@@ -204,7 +204,7 @@ nav.navbar.bootsnav.nav-box .navbar-brand {
   top: 0;
   height: 50px;
   width: 50px;
-  background: #001d4c;
+  background: #0c3c7c;
   color: #ffffff;
   border-radius: 50%;
 }
@@ -437,7 +437,7 @@ nav.bootsnav .dropdown.megamenu-fw .dropdown-menu {
 }
 
 .navbar .side .widget .contact li .icon i {
-  color: #001d4c;
+  color: #0c3c7c;
   font-size: 40px;
   display: inline-block;
   text-align: center;
@@ -471,7 +471,7 @@ nav.navbar .quote-btn a {
   display: inline-block;
   font-size: 12px;
   font-weight: 600;
-  border: 2px solid #001d4c;
+  border: 2px solid #0c3c7c;
   text-transform: uppercase;
   top: -2px;
   letter-spacing: 0.6px;
@@ -518,7 +518,7 @@ nav.bootsnav.navbar-sidebar.bg-dark ul.nav li.dropdown h6 {
 }
 
 .attr-nav ul.cart-list li.total a {
-  background: #001d4c none repeat scroll 0 0;
+  background: #0c3c7c none repeat scroll 0 0;
   display: inline-block;
   font-weight: 600 !important;
   padding: 12px 15px;
@@ -530,12 +530,12 @@ nav.bootsnav.navbar-sidebar.bg-dark ul.nav li.dropdown h6 {
 }
 
 .attr-nav ul.cart-list li.total a:hover {
-  background: #001d4c none repeat scroll 0 0 !important;
+  background: #0c3c7c none repeat scroll 0 0 !important;
   color: #ffffff !important;
 }
 
 nav.navbar.bootsnav {
-  background-color: #001d4c;
+  background-color: #0c3c7c;
   border-radius: 0;
   border: none;
   box-shadow: 0 8px 25px 0 rgba(0, 0, 0, 0.04);
@@ -706,7 +706,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu > li > a .badge {
   padding: 3px 10px;
   font-weight: 600;
   margin-left: 4px;
-  background: #001d4c;
+  background: #0c3c7c;
   color: #ffffff;
   border-radius: 5px;
 }
@@ -820,7 +820,7 @@ nav.navbar.attr-border .attr-nav::before {
 }
 
 .attr-nav > ul > li > a span.badge {
-  background-color: #001d4c;
+  background-color: #0c3c7c;
   color: #ffffff;
   height: 20px;
   line-height: 20px;
@@ -918,7 +918,7 @@ ul.cart-list > li.total > span {
 }
 
 .navbar.bg-dark .top-search {
-  background: #001d4c none repeat scroll 0 0;
+  background: #0c3c7c none repeat scroll 0 0;
 }
 
 .hibiscus .navbar.bg-dark .top-search {
@@ -1081,7 +1081,7 @@ body.on-side .body-overlay {
 }
 
 .navbar .side .widget li a:hover {
-  color: #001d4c;
+  color: #0c3c7c;
 }
 
 .hibiscus .navbar .side .widget li a:hover {
@@ -1118,7 +1118,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
 }
 
 .navbar .side .widget.social li a:hover {
-  background: #001d4c none repeat scroll 0 0;
+  background: #0c3c7c none repeat scroll 0 0;
   color: #ffffff;
 }
 
@@ -1199,7 +1199,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
   background: #f4f4f4 none repeat scroll 0 0;
   border: 1px solid #e7e7e7;
   border-radius: 5px;
-  color: #001d4c;
+  color: #0c3c7c;
   font-size: 20px;
   height: 50px;
   line-height: 48px;
@@ -1256,7 +1256,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle::after {
 }
 
 .side .widget ul.link li a {
-  color: #001d4c;
+  color: #0c3c7c;
   display: block;
   font-weight: bold;
   letter-spacing: 1px;
@@ -1305,7 +1305,7 @@ nav.navbar.bootsnav .share ul > li > a {
 }
 
 nav.navbar.bootsnav .share.dark ul > li > a {
-  background-color: #001d4c;
+  background-color: #0c3c7c;
   color: #ffffff;
 }
 
@@ -1318,7 +1318,7 @@ nav.navbar.bootsnav.color-yellow .share.dark ul > li > a {
 }
 
 nav.navbar.bootsnav .share ul > li > a:hover {
-  color: #001d4c;
+  color: #0c3c7c;
 }
 
 .hibiscus nav.navbar.bootsnav .share ul > li > a:hover {
@@ -1443,7 +1443,7 @@ nav.navbar.bootsnav {
     display: inline-block;
     padding: 0 !important;
     background: #ffffff;
-    color: #001d4c !important;
+    color: #0c3c7c !important;
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -1478,7 +1478,7 @@ nav.navbar.bootsnav {
     content: "";
     height: 100%;
     width: 15%;
-    background: #001d4c;
+    background: #0c3c7c;
     z-index: -1;
   }
 
@@ -1504,7 +1504,7 @@ nav.navbar.bootsnav {
     content: "";
     height: 93px;
     width: 500%;
-    background: #001d4c;
+    background: #0c3c7c;
     z-index: -1;
   }
 
@@ -1537,7 +1537,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.nav > li > a.active {
-    color: #001d4c;
+    color: #0c3c7c;
   }
 
   .hibiscus nav.navbar.bootsnav ul.nav > li > a.active {
@@ -1553,7 +1553,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav.active-bg ul.nav > li > a.active {
-    background: #001d4c !important;
+    background: #0c3c7c !important;
   }
 
   .hibiscus nav.navbar.bootsnav.active-bg ul.nav > li > a.active {
@@ -1572,7 +1572,7 @@ nav.navbar.bootsnav {
     content: "";
     height: 0px;
     width: 80%;
-    border-bottom: 3px solid #001d4c;
+    border-bottom: 3px solid #0c3c7c;
   }
 
   .hibiscus nav.navbar.bootsnav.active-border ul.nav > li > a.active::before {
@@ -1625,7 +1625,7 @@ nav.navbar.bootsnav {
 
   nav.navbar.bootsnav.active-full ul.nav > li > a.active,
     nav.navbar.bootsnav.active-full ul.nav > li > a:hover {
-    background: #001d4c none repeat scroll 0 0 !important;
+    background: #0c3c7c none repeat scroll 0 0 !important;
     color: #ffffff;
   }
 
@@ -1740,7 +1740,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover {
-    color: #001d4c;
+    color: #0c3c7c;
   }
 
   .hibiscus nav.navbar.bootsnav ul.navbar-right li.dropdown ul.dropdown-menu li a:hover {
@@ -1752,7 +1752,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.navbar-left li.dropdown ul.dropdown-menu li a:hover {
-    color: #001d4c;
+    color: #0c3c7c;
   }
 
   .hibiscus nav.navbar.bootsnav ul.navbar-left li.dropdown ul.dropdown-menu li a:hover {
@@ -1848,7 +1848,7 @@ nav.navbar.bootsnav {
   }
 
   nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover {
-    color: #001d4c;
+    color: #0c3c7c;
   }
 
   .hibiscus nav.navbar.bootsnav ul.dropdown-menu.megamenu-content .content ul.menu-col li a:hover {
@@ -2160,7 +2160,7 @@ nav.navbar.bootsnav {
   }
 
   nav.bootsnav.navbar-sidebar ul.nav > li > a:hover {
-    color: #001d4c;
+    color: #0c3c7c;
   }
 
   .hibiscus nav.bootsnav.navbar-sidebar ul.nav > li > a:hover {
@@ -2512,7 +2512,7 @@ nav.navbar.bootsnav {
 
   nav.navbar.bootsnav ul.nav li.dropdown > ul.dropdown-menu li:hover > a {
     background-color: transparent !important;
-    color: #001d4c !important;
+    color: #0c3c7c !important;
   }
 
   .hibiscus nav.navbar.bootsnav ul.nav li.dropdown > ul.dropdown-menu li:hover > a {
@@ -3056,7 +3056,7 @@ ul.cart-list > li.total > .btn {
     font-size: 25px;
     position: relative;
     float: left;
-    color: #001d4c;
+    color: #0c3c7c;
     top: 3px;
   }
 
@@ -3079,7 +3079,7 @@ ul.cart-list > li.total > .btn {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;
-    background: #001d4c;
+    background: #0c3c7c;
     color: #ffffff;
   }
 
@@ -3093,7 +3093,7 @@ ul.cart-list > li.total > .btn {
   }
 
   .attr-nav > ul > li.button a {
-    background: #001d4c;
+    background: #0c3c7c;
     padding: 20px 40px !important;
     font-size: 14px;
     text-transform: uppercase;
@@ -3136,7 +3136,7 @@ ul.cart-list > li.total > .btn {
   }
 
   .attr-nav.menu li:last-child a {
-    background: #001d4c none repeat scroll 0 0;
+    background: #0c3c7c none repeat scroll 0 0;
     border-radius: 30px;
     color: #ffffff !important;
     padding: 5px 20px !important;
@@ -3547,7 +3547,7 @@ body.wrap-nav-sidebar {
 
 .attr-nav.button li a i {
   margin-right: 3px;
-  color: #001d4c;
+  color: #0c3c7c;
 }
 
 .hibiscus .attr-nav.button li a i {
