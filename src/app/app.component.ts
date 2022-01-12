@@ -17,7 +17,7 @@ export class AppComponent implements OnInit{
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd ) {
         console.log(event.url)
-        if(event.url == '/home'){
+        if(event.url == '/'){
           document.body.style.background = "url('assets/img/body_bg.jpg') repeat ";
           document.body.style.backgroundSize = "contain";
         }
