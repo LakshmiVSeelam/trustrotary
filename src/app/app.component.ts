@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router, Routes } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +11,17 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class AppComponent implements OnInit{
   title = 'rotary';
   scrollClass : string = 'd-none';
-  constructor() {
+  currentUrl : any ;
 
+  constructor(private router : Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd ) {
+        if(event.url == '/home'){
+          document.body.style.background = "url('assets/img/body_bg.jpg') repeat ";
+          document.body.style.backgroundSize = "contain";
+        }
+      }
+    });
   }
 
   ngOnInit() : void {
