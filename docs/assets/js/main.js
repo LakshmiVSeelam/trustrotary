@@ -93,7 +93,7 @@
         /* ==================================================
             # Youtube Video Init
          ===============================================*/
-        $('.player').mb_YTPlayer();
+        // $('.player').mb_YTPlayer();
 
 
         /* ==================================================
@@ -450,3 +450,30 @@
 
     }); // end document ready function
 })(jQuery); // End jQuery
+
+
+function doAnimations(elems) {
+    //Cache the animationend event in a variable
+    var animEndEv = 'webkitAnimationEnd animationend';
+    elems.each(function() {
+        var $this = $(this),
+            $animationType = $this.data('animation');
+        $this.addClass($animationType).one(animEndEv, function() {
+            $this.removeClass($animationType);
+        });
+    });
+}
+
+function banner_carouselFn(){
+    var $immortalCarousel = $('.animate_text'),
+    $firstAnimatingElems = $immortalCarousel.find('.item:first').find("[data-animation ^= 'animated']");
+    //Initialize carousel
+    $immortalCarousel.carousel();
+    //Animate captions in first slide on page load
+    doAnimations($firstAnimatingElems);
+    //Other slides to be animated on carousel slide event
+    $immortalCarousel.on('slide.bs.carousel', function(e) {
+    var $animatingElems = $(e.relatedTarget).find("[data-animation ^= 'animated']");
+    doAnimations($animatingElems);
+    });
+}
