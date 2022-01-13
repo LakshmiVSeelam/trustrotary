@@ -8,8 +8,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <ol class="carousel-indicators">
-                                <li *ngFor="let carousel of carousel_data, let i = index" data-target="#bootcarousel" attr.data-slide-to="{{i}}" [ngClass]="i == 0 ? 'active' : ''"></li>
+                            <ol class="carousel-indicators d-flex pb-5">
+                                <li *ngFor="let carousel of carousel_data, let i = index" data-target="#bootcarousel" attr.data-slide-to="{{i}}" [ngClass]="i == 0 ? 'active' : ''" class="mx-2"></li>
                                 <!-- <li data-target="#bootcarousel" data-slide-to="1"></li> -->
                             </ol>
                         </div>
@@ -26,13 +26,13 @@
                         <div class="box-cell shadow dark">
                             <div class="container">
                                 <div class="row">
-                                    <div class="col-lg-9">
+                                    <div class="col-lg-8">
                                         <div class="content">
                                             <h2 data-animation="animated slideInRight" class="font-weight-bold">{{carousel.heading}}</h2>
                                             <p data-animation="animated slideInLeft">
                                                 {{carousel.content}}
                                             </p>
-                                            <a data-animation="animated fadeInUp" class="btn circle btn-light effect btn-md" routerLink="{{carousel.link}}">Discover More</a>
+                                            <a data-animation="animated fadeInUp" class="btn circle btn-theme border btn-md" routerLink="{{carousel.link}}">Discover More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -42,6 +42,15 @@
                 </div>
             </div>
             <!-- End Wrapper for slides -->
+
+            <a class="left carousel-control light" href="#bootcarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control light" href="#bootcarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+                <span class="sr-only">Next</span>
+            </a>
 
         </div>
     </div>
