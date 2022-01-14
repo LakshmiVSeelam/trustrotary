@@ -1,0 +1,32 @@
+<div class="about-area py-5">
+    <div class="container py-5 info">
+        <h5 class="text-center h2">Our Team</h5>
+        <div class="row align-items-start justify-content-center d-flex">
+            <div class="text-center m-2"  *ngFor="let member of teams.slice(0,3)">
+                <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
+                <div class="text-wrapper">
+                    <h6 class="m-0 text-nowrap">{{member.name}}</h6>
+                    <p class="m-0 w-100 text-capitalize">{{member.role}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-center d-flex">
+            <div class="text-center m-2"  *ngFor="let member of teams.slice(4,8)">
+                <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
+                <div class="text-wrapper">
+                    <h6 class="m-0 text-nowrap">{{member.name}}</h6>
+                    <p class="m-0 w-100 text-capitalize">{{member.role}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-start justify-content-center d-flex">
+            <div class="text-center m-2"  *ngFor="let member of teams.slice(8,13)">
+                <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
+                <div class="text-wrapper">
+                    <h6 class="m-0 text-nowrap">{{member.name}}</h6>
+                    <p class="m-0 w-100 text-capitalize">{{member.role}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

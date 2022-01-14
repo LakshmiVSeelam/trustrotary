@@ -18,6 +18,7 @@ import { EventSectionComponent } from './shared/event-section/event-section.comp
 import { GallerySectionComponent } from './shared/gallery-section/gallery-section.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { ProgramComponent } from './shared/program/program.component';
+import { TeamComponent } from './shared/team/team.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ProgramComponent } from './shared/program/program.component';
     EventSectionComponent,
     GallerySectionComponent,
     BannerComponent,
-    ProgramComponent
+    ProgramComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
