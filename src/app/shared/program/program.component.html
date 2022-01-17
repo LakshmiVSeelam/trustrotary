@@ -1,5 +1,10 @@
-<app-banner [page]="programId" [pageName]="program.service"></app-banner>
-<div class="blog-area single full-blog full-blog default-padding">
+<!-- <app-banner [page]="programId" [pageName]="program.service"></app-banner> -->
+<div class="blog-area single full-blog full-blog">
+    <div class="thumb">
+        <a href="#">
+            <img src="assets/img/{{programId}}_banner.png" alt="Thumb">
+        </a>
+    </div>
     <div class="container">
         <div class="blog-items">
             <div class="row">
@@ -8,11 +13,7 @@
 
                         <div class="blog-item-box">
                             <!-- Start Post Thumb -->
-                            <!-- <div class="thumb">
-                                <a href="#">
-                                    <img src="assets/img/{{programId}}_banner.png" alt="Thumb">
-                                </a>
-                            </div> -->
+                            
                             <!-- Start Post Thumb -->
 
                             <div class="info" *ngIf="programId == 'bloodbank'">
@@ -22,15 +23,92 @@
                                 </p>
                                 <p>Our trust identified the importance of Blood Banks and considering the gap between need and availability decided to establish a Blood Bank  
                                 </p>
+                                
+                                <blockquote>
+                                    Appreciating the significance of having a quality blood bank,  Sri Karuturi Satyanarayana Murthy, Chairman & Managing Director of Apex Frozen Foods limited, Kakinada & his family members have voulenteered to support "Rotary Central blood Bank" emotionally & financially.  A Big thanks to them. As a token of gratitude and appreciation, the blood bank is named as "Karuturi Rotary Central Blood Bank".
+                                </blockquote>
+
                                 <h3>Why is Blood Bank important?</h3>
                                 <p>
                                     A blood bank plays an important role in patient care. Transfusion-related errors have serious consequences for patients, including death. Proper identification of the patient and blood products is critical in avoiding such transfusion-related reactions.
                                 </p>
-                                <blockquote>
-                                    Appreciating the significance of having a quality blood bank,  Sri Karuturi Satyanarayana Murthy, Chairman & Managing Director of Apex Frozen Foods limited, Kakinada & his family members have voulenteered to support "Rotary Central blood Bank" emotionally & financially.  A Big thanks to them. As a token of gratitude and appreciation, the blood bank is named as "Karuturi Rotary Central Blood Bank".
-                                </blockquote>
-                                <h4>OBJECTIVES :</h4>
+                                <h4>Why Donate Blood</h4>
                                 <ul>
+                                    <li>The most precious gift that one can give to another person is the gift of life i.e. blood. It is the essence of life.</li>
+                                    <li>Your blood saves more than one life when it is separated into its components (red blood cells, plasma etc.).</li>
+                                    <li>Blood is needed regularly for patients with diseases such as thalassemia and hemophilia, and also for the treatment of injuries after an accident, major surgeries, anemia, etc.</li>
+                                    <li>It improves your health.</li>
+                                </ul>
+                                <h4>Benefits of Donating Blood</h4>
+                                <ul>
+                                    <li>Less likely to suffer diseases</li>
+                                    <li>Did you know that people who donate blood are 88% less likely to suffer a heart attack and 33% less likely to acquire any type of cardiovascular disease.</li>
+                                    <li>When you donate blood, it removes 225 to 250 milligrams of iron from your body, hence reducing the risk of heart disease.</li>
+                                    <li>Blood Center performs numerous tests on the donated blood. Therefore regular blood donation helps in sheilding you from serious diseases.</li>
+                                </ul>
+                                <h4>Stats about Blood</h4>
+                                <ul>
+                                    <li>According to a 2012 World Health Organisation (WHO) report, only nine million units are collected annually, while the need is for 12 million units.</li>
+                                    <li>Delhi NCR alone faces a shortage of 100,000 units per year.</li>
+                                    <li>The shelf-life of donated blood is 35 to 42 days. There is a constant need to replenish stocks in our blood banks.</li>
+                                    <li>Healthy donors are between the age of 18 to 65 years.</li>
+                                    <li>Statistics show that there are 234 million major operations in India, 63 million trauma-induced surgeries, 31 million cancer-related procedures and 10 million pregnancy related complications which require blood transfusions.</li>
+                                </ul>
+                                <h4>Facts About Blood</h4>
+                                <ul>
+                                    <li>One unit of donated blood can save up to three lives.</li>
+                                    <li> You can donate blood every three months. It only takes 48 hours for your body fluids to be completely replenished.</li>
+                                    <li>Scientists have estimated the volume of blood in the human body to be eight percent of body weight.</li>
+                                    <li>There are 100,000 miles of blood vessels in an adult human body.</li>
+                                    <li>A red blood cell can make a complete circuit of your body in 30 seconds.</li>
+                                    <li>White blood cells make up about 1% of your blood.</li>
+                                </ul>
+                                <h4>Before You Donate</h4>
+                                <ul>
+                                    <li>Donating blood is a safe, simple, and rewarding experience that usually takes 30 minutes.</li>
+                                    <li>To donate blood, find a blood bank near you using eRaktKosh Nearby Blood Bank Search.</li>
+                                    <li>Requirement before Blood Donation is that your weight should be atleast 45 kgs , be at least 18 years old and be healthy in general.</li>
+                                    <li>If you have any particular health concerns then inform the blood bank at the time of blood donation.</li>
+                                </ul>
+                                <h4>What to Expect When You Give Blood?</h4>
+                                <p>
+                                    If you’ve decided to donate blood, you may be curious about what to expect. Giving blood is a simple, safe way to make a big difference in people’s lives. Knowing what will happen before, during, and after you donate can help you prepare for the process.
+                                </p>
+                                <h4>Blood Donation Benefits</h4>
+                                <p>Every 2 seconds, someone in the United States needs blood. Donating blood can help:</p>
+                                <ul>
+                                    <li>People who go through disasters or emergency situations</li>
+                                    <li>People who lose blood during major surgeries</li>
+                                    <li>People who have lost blood because of a gastrointestinal bleed</li>
+                                    <li>Women who have serious complications during pregnancy or childbirth</li>
+                                    <li>People with cancer or severe anemia sometimes caused by thalassemia or sickle cell disease</li>
+                                    <li>And many others.</li>
+                                </ul>
+                                <h4>How often can you donate blood?</h4>
+                                <p>
+                                    If you donate whole blood, you need to wait 56 days between donations -- possibly longer, depending on the policy of your blood bank.
+If you’re donating platelets, the American Red Cross allows people to do this every 7 days, up to 24 times a year.
+                                </p>
+                                <h4>Side Effects After Donating Blood</h4>
+                                <p>There aren’t any lasting side effects, but you may temporarily:</p>
+                                <ul>
+                                    <li>Need to hydrate. Drink more non-alcoholic beverages for 24-48 hours after you donate blood.</li>
+                                    <li>Need to take it easy. Don’t work out or do any hard physical activity for 24 hours after giving blood.</li>
+                                    <li>Feel lightheaded. Lie down for a few minutes until you feel ready to get back up.</li>
+                                    <li>Have a little bit of bleeding from the spot where you donated. Raise your arm and apply pressure to that spot for a few minutes.</li>
+                                    <li>If you have bruising in that area, use an ice pack on it.</li>
+                                </ul>
+                                <h4>Blood Donation Facts</h4>
+                                <ul>
+                                    <li>Every two seconds someone needs blood.</li>
+                                    <li>The donated blood will be replaced in 56 days (less than 2 months)</li>
+                                    <li>Donor will not become "weak" after blood donation.</li>
+                                    <li>A person has 5 - 6 litres of blood in his/her body.</li>
+                                    <li>One can donate blood every 90 days (3 months)</li>
+                                    <li>It takes only 15 to 20 minutes to donate blood.</li>
+                                </ul>
+                                <h4>OBJECTIVES :</h4>
+                                <ul class="mb-5">
                                     <li *ngFor="let obj of program.objectives">{{ obj}} </li>
                                 </ul>
                             </div>

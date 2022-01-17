@@ -5907,17 +5907,27 @@ a.btn-more:hover {
 }
 
 .blog-area .blog-items .info > ul li {
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   color: #232323;
   position: relative;
   z-index: 1;
   padding-left: 18px;
 }
 
-.blog-area .blog-items .info > ul {
-  margin-bottom: 25px;
-  margin-top: 25px;
+
+.blog-area .blog-items .info p {
+  margin-bottom: 0px;
 }
+
+.blog-area .blog-items .info h4 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+// .blog-area .blog-items .info > ul {
+//   margin-bottom: 25px;
+//   margin-top: 25px;
+// }
 
 .blog-area .blog-items .info > ul li::after {
   position: absolute;

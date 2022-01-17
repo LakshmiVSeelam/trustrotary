@@ -6,7 +6,7 @@
                 <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
                 <div class="text-wrapper">
                     <h6 class="m-0 text-nowrap" [innerHTML]="member.name">{{member.name}}</h6>
-                    <p class="m-0 w-100 text-capitalize small">{{member.role}}</p>
+                    <p class="m-0 w-100 text-capitalize small" [innerHTML]="member.role">{{member.role}}</p>
                 </div>
             </div>
         </div>
