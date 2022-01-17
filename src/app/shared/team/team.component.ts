@@ -8,23 +8,30 @@ import { Component, OnInit } from '@angular/core';
 export class TeamComponent implements OnInit {
 
   teams : any;
+  team_mem : any ;
 
   constructor() { 
-    this.teams = [
-      {'name': 'Rtn. K.V.V.B. Sarma', 'role': 'Trust Chairman', 'img': 'Sarma'},
-      {'name': 'Rtn. K.S. Murthy', 'role': 'Trust Vice Chairman & Fund Raising Committee Chariman', 'img': 'kmurthy'},
-      {'name': 'Rtn. C.A. Boda Anand Kumar', 'role': 'Trust Secretary & Building Project Chairman', 'img': 'anandkumar'},
-      {'name': 'Rtn. PDG M. Veerabhadra Reddy (Bobby)', 'role': 'Blood Bank Project Co-Ordinators', 'img': 'reddy'},
-      {'name': 'Rtn. J. Hari Babu', 'role': 'Blood Bank Project Co-Ordinators', 'img': 'haribabu'},
-      {'name': 'Rtn. C.P.V. Ramanujam', 'role': 'physiotherapy Project Co-Ordinators', 'img': 'ramanujam'},
-      {'name': 'Rtn. G.S. Murthy', 'role': 'physiotherapy Project Co-Ordinators', 'img': 'smurthy'},
-      {'name': 'Rtn. V. S.N. Murty (Suryam)', 'role': 'skill development Project Co-Ordinators', 'img': 'murty'},
-      {'name': 'Rtn. Jayesh Desai', 'role': 'skill development Project Co-Ordinators', 'img': 'jayesh'},
-      {'name': 'Rtn. C. Satyanarayana (CS)', 'role': 'Fund-Raising co-ordinator', 'img': 'satya'},
-      {'name': 'Rtn. Ravi Teja', 'role': 'construction co-ordinator', 'img': 'raviteja'},
-      {'name': 'Rtn. Bandaru Sai Ram', 'role': 'construction co-ordinator', 'img': 'sairam'},
-      {'name': 'Rtn. Sama V Bhaskar', 'role': 'ex officio member', 'img': 'bhaskar'}
+    let data = [
+      {'grp': 1, 'name': 'Rtn. K.V.V.B. Sarma', 'role': 'Trust Chairman', 'img': 'Sarma'},
+      {'grp': 1, 'name': 'Rtn. K.S. Murthy', 'role': 'Trust Vice Chairman & Fund Raising Committee Chariman', 'img': 'kmurthy'},
+      {'grp': 1, 'name': 'Rtn. C.A. Boda Anand Kumar', 'role': 'Trust Secretary & Building Project Chairman', 'img': 'anandkumar'},
+      {'grp': 2, 'name': 'Rtn. PDG M. Veerabhadra Reddy <br> (Bobby)', 'role': 'Blood Bank Project Co-Ordinators', 'img': 'reddy'},
+      {'grp': 2, 'name': 'Rtn. J. Hari Babu', 'role': 'Blood Bank Project Co-Ordinators', 'img': 'haribabu'},
+      {'grp': 2, 'name': 'Rtn. C.P.V. Ramanujam', 'role': 'physiotherapy Project Co-Ordinators', 'img': 'ramanujam'},
+      {'grp': 2, 'name': 'Rtn. G.S. Murthy', 'role': 'physiotherapy Project Co-Ordinators', 'img': 'smurthy'},
+      {'grp': 2, 'name': 'Rtn. V. S.N. Murty (Suryam)', 'role': 'skill development Project Co-Ordinators', 'img': 'murty'},
+      {'grp': 2, 'name': 'Rtn. Jayesh Desai', 'role': 'skill development Project Co-Ordinators', 'img': 'jayesh'},
+      {'grp': 3, 'name': 'Rtn. C. Satyanarayana (CS)', 'role': 'Fund-Raising co-ordinator', 'img': 'satya'},
+      {'grp': 3, 'name': 'Rtn. Ravi Teja', 'role': 'construction co-ordinator', 'img': 'raviteja'},
+      {'grp': 3, 'name': 'Rtn. Bandaru Sai Ram', 'role': 'construction co-ordinator', 'img': 'sairam'},
+      {'grp': 3, 'name': 'Rtn. Sama V Bhaskar', 'role': 'ex officio member', 'img': 'bhaskar'}
     ]
+    this.team_mem = data.reduce((r : any, a : any) => {
+      r[a.grp] = [...r[a.grp] || [], a];
+      return r;
+     }, {});
+    
+    this.teams = Object.keys(this.team_mem)
   }
 
   ngOnInit(): void {

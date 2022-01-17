@@ -1,32 +1,25 @@
 <div class="about-area py-5">
     <div class="container py-5 info">
-        <h5 class="text-center h2">Our Team</h5>
-        <div class="row align-items-start justify-content-center d-flex">
-            <div class="text-center m-2"  *ngFor="let member of teams.slice(0,3)">
+        <h5 class="text-center h2">Board of Trustees</h5>
+        <div class="align-items-start justify-content-center d-flex" *ngFor="let team of teams">
+            <div class="text-center m-2"  *ngFor="let member of team_mem[team]">
                 <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
                 <div class="text-wrapper">
-                    <h6 class="m-0 text-nowrap">{{member.name}}</h6>
-                    <p class="m-0 w-100 text-capitalize">{{member.role}}</p>
+                    <h6 class="m-0 text-nowrap" [innerHTML]="member.name">{{member.name}}</h6>
+                    <p class="m-0 w-100 text-capitalize small">{{member.role}}</p>
                 </div>
             </div>
         </div>
-        <div class="row align-items-start justify-content-center d-flex">
-            <div class="text-center m-2"  *ngFor="let member of teams.slice(4,8)">
-                <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
-                <div class="text-wrapper">
-                    <h6 class="m-0 text-nowrap">{{member.name}}</h6>
-                    <p class="m-0 w-100 text-capitalize">{{member.role}}</p>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-start justify-content-center d-flex">
-            <div class="text-center m-2"  *ngFor="let member of teams.slice(8,13)">
-                <img width="200px" src="assets/img/{{member.img}}.jpg" class="img-responsive mb-2 p-3 border bg-dark">
-                <div class="text-wrapper">
-                    <h6 class="m-0 text-nowrap">{{member.name}}</h6>
-                    <p class="m-0 w-100 text-capitalize">{{member.role}}</p>
-                </div>
-            </div>
-        </div>
+        <!-- </div> -->
     </div>
-</div>
+    <div class="container py-5 info">
+        <h5 class="text-center h2">Appeal</h5>
+        <div class="col-lg-9 col-md-12 mx-auto text-center">
+            <p>
+                As this project was initiated with an intention to establish (1) Blood Bank - To cater to the needs of the general public in emergency life threatening situation for supply of Safe Blood, (2) Physiotherapy facility with ultra modern equipment and (3) Skill Development Center for purposeful Skill Development programmes to the youth, it requires huge funding. We humbly request philanthropists like you to contribute generously for successful completion of the project.
+    <br>Once completed, this project will be recognized as the best of its kind and it will help generations to generations.
+    <br>Our trust has been granted 12A Regn. under Income Tax Act, 1961 and Donors are eligible for exemption  u/s 80G of Income Tax Act 1961
+            </p>
+        </div>
+        
+    </div>
