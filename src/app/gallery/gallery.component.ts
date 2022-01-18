@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  data : any;
+  constructor() { 
+    this.data = [
+      {'name': '', 'imgUrl': ''}
+    ]
+  }
 
   ngOnInit(): void {
   }
