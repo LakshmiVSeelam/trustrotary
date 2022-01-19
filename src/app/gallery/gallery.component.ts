@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   data : any;
+  categories : any;
   constructor() { 
     this.data = [
       {'name': 'Cement Benches', 'imgUrl': 'bench_1'},
@@ -17,6 +18,7 @@ export class GalleryComponent implements OnInit {
       {'name': 'Blood Donation', 'imgUrl': 'blood_1'},
       {'name': 'Blood Donation', 'imgUrl': 'blood_2'}      
     ]
+    this.categories = [...new Set(this.data.map((a : any) => a.name))]
   }
 
   ngOnInit(): void {
