@@ -477,3 +477,17 @@ function banner_carouselFn(){
     doAnimations($animatingElems);
     });
 }
+
+function gallery_isotope(){
+    var $grid = $('.gallery').isotope({
+        itemSelector: '.gallery-item',
+        layoutMode: 'masonry'
+    });
+
+    $('.filter-button-group').on( 'click', 'button', function() {
+    var filterValue = $(this).attr('data-filter');
+    console.log(filterValue)
+    $grid.isotope({ filter: filterValue });
+    });
+}
+
