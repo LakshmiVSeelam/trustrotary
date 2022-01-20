@@ -11,9 +11,9 @@ declare const banner_carouselFn : any;
 export class HomeComponent implements OnInit {
 
   carousel_data : any = [
-    {'img': 'buildingcarousel', 'link': '/about', 'heading': 'Mother of all Projects. The Unsurpassed.','content': 'Join with us. Join to serve.'},
+    {'img': 'buildingcarousel', 'link': '/about', 'heading': 'There is a Way.','content': 'Come and make them smile.'},
     {'img': 'bloodbankcarousel', 'link': '/programs/bloodbank', 'heading': 'Donate blood. Save life.','content': 'There is a hope of life to someone in your blood donation'},
-    {'img': 'physiocarousel' , 'link': '/programs/physiotherapy', 'heading': 'You are not sick. You are injured.', 'content': 'Inhale Courage. Exhale Fear'},
+    {'img': 'physiocarousel' , 'link': '/programs/physiotherapy', 'heading': 'You are not sick. You are injured.', 'content': 'Enjoy the freedom again'},
     {'img': 'skillcarousel', 'link': '/programs/skilldevelopment', 'heading': 'Invest in yourself. It pays the best interest.', 'content': 'Fortunate are the few who can master a skill'}
   ]
   

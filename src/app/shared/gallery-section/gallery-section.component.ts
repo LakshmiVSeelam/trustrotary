@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gallery-section.component.scss']
 })
 export class GallerySectionComponent implements OnInit {
-  events: any;
+  data: any;
   constructor() {
-    this.events = [
-      {'name': 'Distribution of 3600 pairs of Slippers to Municipal School Students at Kakinada'}
+    this.data = [
+      {'name': 'Cement Benches', 'imgUrl': 'bench_1'},
+      {'name': 'Cement Benches', 'imgUrl': 'bench_2'},
+      {'name': 'Buttermilk Distribution', 'imgUrl': 'buttermilk_1'},
+      {'name': 'Buttermilk Distribution', 'imgUrl': 'buttermilk_2'},
+      {'name': 'Buttermilk Distribution', 'imgUrl': 'buttermilk_1'},
+      {'name': 'Buttermilk Distribution', 'imgUrl': 'buttermilk_2'}
+      // {'name': 'Blood Donation', 'imgUrl': 'blood_1'}
+      // {'name': 'Blood Donation', 'imgUrl': 'blood_2'}      
     ]
   }
 

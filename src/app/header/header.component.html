@@ -76,13 +76,22 @@
                 </a>
             </div>
             <!-- End Header Navigation -->
-
+            
+            
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
+                <div class=" position-absolute translate_select">
+                    <select class="form-control py-0 h-auto rounded-0" aria-label="Default select example">
+                        <option selected>English</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <ul class="nav navbar-nav py-3" data-in="fadeInDown" data-out="fadeOutUp">
                     <li *ngFor="let route of routes" [ngClass]="{'dropdown': route.children }" routerLinkActive="active">
-                        <a [routerLink]="route.link" *ngIf="!route.children">{{ route.name }}</a>
-                        <a *ngIf="route.children" href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" >{{ route.name }}</a>
+                        <a [routerLink]="route.link" *ngIf="!route.children" class="py-0">{{ route.name }}</a>
+                        <a *ngIf="route.children" href="javascript:void(0)" class="dropdown-toggle py-0" data-toggle="dropdown" >{{ route.name }}</a>
                         <ul class="dropdown-menu">
                             <li><a [routerLink]="r.link" *ngFor="let r of route.children">{{ r.name }}</a></li>
                         </ul>
@@ -90,9 +99,10 @@
                 </ul>
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav border-less">
-                    <ul>
-                        <li class="button"><a href="#">Donate</a></li>
-                    </ul>
+                    <!-- <ul>
+                        <li class="button p-0"><a href="#" class="p-0">Donate</a></li>
+                    </ul> -->
+                    <button class="btn py-3 px-4 donate_btn">Donate</button>
                 </div>        
                 <!-- End Atribute Navigation -->
             </div><!-- /.navbar-collapse -->

@@ -3070,7 +3070,7 @@ ul.cart-list > li.total > .btn {
 
   .attr-nav > ul > li > a {
     font-size: 18px;
-    padding: 8px 10px !important;
+    padding: 8px 10px;
   }
 
   .attr-nav > ul.button > li > a {
@@ -3094,7 +3094,7 @@ ul.cart-list > li.total > .btn {
 
   .attr-nav > ul > li.button a {
     background: #0c3c7c;
-    padding: 20px 40px !important;
+    padding: 20px 40px;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 800;

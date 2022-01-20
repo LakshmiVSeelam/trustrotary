@@ -33,7 +33,7 @@ body {
   line-height: 30px;
   overflow-x: hidden;
   background-color: #ffffff;
-  color: #666666;
+  color: #000;
 }
 
 html, body, .wrapper {
@@ -80,7 +80,7 @@ a img, iframe {
 }
 
 p {
-  color: #666666;
+  color: #000;
   margin: 0 0 15px;
   text-transform: none;
   font-weight: 400;
@@ -4868,9 +4868,9 @@ ul.pagination {
   transition: all 0.35s ease-in-out;
 }
 
-.gallery-area .gallery-items .pf-item .item-inner:hover::after {
-  opacity: 0.5;
-}
+// .gallery-area .gallery-items .pf-item .item-inner:hover::after {
+//   opacity: 0.5;
+// }
 
 .gallery-area .gallery-items .pf-item .item-inner img {
   max-width: 100%;
@@ -4884,10 +4884,10 @@ ul.pagination {
   transition: all 0.35s ease-in-out;
 }
 
-.gallery-area .gallery-items .pf-item .item-inner:hover  img {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
+// .gallery-area .gallery-items .pf-item .item-inner:hover  img {
+//   -webkit-transform: scale(1.2);
+//   transform: scale(1.2);
+// }
 
 .gallery-area .gallery-items .pf-item .item-inner .overlay {
   position: absolute;
