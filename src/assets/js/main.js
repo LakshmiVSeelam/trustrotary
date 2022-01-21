@@ -409,7 +409,7 @@
         /* ==================================================
             Nice Select Init
          ===============================================*/
-        $('select').niceSelect();
+        // $('select').niceSelect();
 
 
         /* ==================================================
@@ -479,14 +479,17 @@ function banner_carouselFn(){
 }
 
 function gallery_isotope(){
-    var $grid = $('.gallery').isotope({
-        itemSelector: '.gallery-item',
-        layoutMode: 'masonry'
-    });
+    var $grid = $('.gallery').imagesLoaded( function(){
+        $grid.isotope({
+            itemSelector: '.gallery-item',
+            layoutMode: 'masonry'
+        });
+    })
 
     $('.filter-button-group').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
-    console.log(filterValue)
+    $('.filter-button-group .btn-theme').removeClass('active')
+    $(this).addClass('active')
     $grid.isotope({ filter: filterValue });
     });
 }

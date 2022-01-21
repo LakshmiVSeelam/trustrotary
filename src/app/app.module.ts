@@ -20,7 +20,7 @@ import { BannerComponent } from './shared/banner/banner.component';
 import { ProgramComponent } from './shared/program/program.component';
 import { TeamComponent } from './shared/team/team.component';
 
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -44,7 +44,8 @@ import { TeamComponent } from './shared/team/team.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -662,7 +662,7 @@ input {
   color: #ffffff !important;
 }
 
-.btn-theme.border:hover {
+.btn-theme.border:hover, .btn-theme.border.active {
   background-color: #0c3c7c;
   color: #ffffff !important;
   border: 2px solid #0c3c7c;

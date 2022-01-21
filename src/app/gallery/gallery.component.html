@@ -1,11 +1,11 @@
 <div class="container py-4">
     <div class="button-group filter-button-group m-1">
-        <button data-filter="*" class="btn circle btn-theme border btn-sm mr-1">show all</button>
-        <button class="btn circle btn-theme border btn-sm mr-1" attr.data-filter=".{{category.replace(' ', '')}}" *ngFor="let category of categories">{{category}}</button>
+        <button data-filter="*" class="btn circle btn-theme border py-1 px-3 mr-1 my-1 active">show all</button>
+        <button class="btn circle btn-theme border py-1 px-3 mr-1 my-1" attr.data-filter=".{{category.id}}" *ngFor="let category of categories">{{category.name}}</button>
     </div>
     <div class="gallery">
-        <div class="gallery-item m-1 {{item.name.replace(' ', '')}}" *ngFor="let item of data">
-            <img src="assets/img/gallery/{{item.imgUrl}}.jpg" />
+        <div class="gallery-item m-1 {{item.name}}" *ngFor="let item of data ">
+            <img [src]="item.url" />
         </div>
     </div>
 </div>
