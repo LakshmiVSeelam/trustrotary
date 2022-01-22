@@ -80,13 +80,13 @@
             
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-menu">
-                <div class=" position-absolute translate_select">
-                    <select class="form-control py-0 h-auto rounded-0" aria-label="Default select example">
+                <div class=" position-absolute translate_select" id="google_translate_element">
+                    <!-- <select class="form-control py-0 h-auto rounded-0" aria-label="Default select example">
                         <option selected>English</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
                         <option value="3">Three</option>
-                    </select>
+                    </select> -->
                 </div>
                 <ul class="nav navbar-nav py-3" data-in="fadeInDown" data-out="fadeOutUp">
                     <li *ngFor="let route of routes" [ngClass]="{'dropdown': route.children }" routerLinkActive="active">

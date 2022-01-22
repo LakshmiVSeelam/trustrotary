@@ -21,6 +21,7 @@ import { ProgramComponent } from './shared/program/program.component';
 import { TeamComponent } from './shared/team/team.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { HttpClientModule } from '@angular/common/http';
     GallerySectionComponent,
     BannerComponent,
     ProgramComponent,
-    TeamComponent
+    TeamComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,

@@ -15,10 +15,17 @@
   <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
   <link href="assets/css/animate.css" rel="stylesheet" />
   <link href="assets/css/bootsnav.css" rel="stylesheet" />
-  <link href="style.css" rel="stylesheet">
+  <!-- <link href="style.css" rel="stylesheet"> -->
   <link href="assets/css/responsive.css" rel="stylesheet" />
+
 </head>
 <body>
+  <style>
+     .goog-te-gadget{
+     color: transparent!important;
+     height: 25px;
+   }
+  </style>
   <app-root></app-root>
   <script src="assets/js/jquery-1.12.4.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
@@ -38,5 +45,18 @@
   <!-- <script src="assets/js/jquery.nice-select.min.js"></script> -->
   <script src="assets/js/bootsnav.js"></script>
   <script src="assets/js/main.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"> 
+        function googleTranslateElementInit() { 
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'}, 
+                'google_translate_element'
+            ); 
+
+            $('#google_translate_element span').remove()
+            // $('.skiptranslate').text('')
+        } 
+    </script> 
+	</script>
 </body>
 </html>

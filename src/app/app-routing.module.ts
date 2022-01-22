@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { AboutComponent } from './about/about.component';
+import { AchievementsComponent } from './achievements/achievements.component';
 import { ContactComponent } from './contact/contact.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
@@ -24,6 +25,9 @@ const routes: Routes = [
   },
   {
     path : 'programs/:program', component: ProgramComponent
+  },
+  {
+    path: 'achievements', component : AchievementsComponent
   },
   {
     path: 'gallery', component : GalleryComponent
