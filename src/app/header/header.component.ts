@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
+declare const donate_modal : any
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
+
+
 export class HeaderComponent implements OnInit {
 
   routes : any ;
@@ -23,9 +26,17 @@ export class HeaderComponent implements OnInit {
   }
 
   
+  // displayStyle = "none";
   
+  openPopup() {
+    donate_modal()
+  }
+  // closePopup() {
+  //   this.displayStyle = "none";
+  // }
 
   ngOnInit(): void {
+    // donate_modal()
   }
 
 }

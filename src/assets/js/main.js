@@ -494,3 +494,7 @@ function gallery_isotope(){
     });
 }
 
+function donate_modal(){
+    $('#donate_modal').modal()
+}
+

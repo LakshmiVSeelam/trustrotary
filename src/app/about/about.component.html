@@ -18,7 +18,8 @@
                 <p>
                     {{ section.desc }}
                 </p>
-                <a *ngIf="section.link" [href]="section.link" class="btn circle btn-theme border btn-sm">Know More...</a>
+                <a *ngIf="section.link" [href]="section.link" class="btn circle btn-theme border btn-sm" target="blank">Know More...</a>
+                <a *ngIf="section.routerLink" [routerLink]="section.routerLink" class="btn circle btn-theme border btn-sm">Know More...</a>
             </div>
             
         </div>
