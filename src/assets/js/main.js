@@ -492,9 +492,25 @@ function gallery_isotope(){
     $(this).addClass('active')
     $grid.isotope({ filter: filterValue });
     });
+
+    $grid.on( 'arrangeComplete', function( event, filteredItems ) {
+        hideLoader()
+    });
 }
 
 function donate_modal(){
     $('#donate_modal').modal()
 }
+
+function showLoader(){
+    $('body').addClass('overflow-hidden')
+    $('#loader').show()
+}
+
+function hideLoader(){
+    $('body').removeClass('overflow-hidden')
+
+    $('#loader').hide()
+}
+
 
