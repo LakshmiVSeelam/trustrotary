@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
+
 import { AboutComponent } from './about/about.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ContactComponent } from './contact/contact.component';
@@ -46,6 +49,7 @@ const routes: Routes = [
     relativeLinkResolution: 'legacy',
     scrollPositionRestoration: 'enabled'
 })],
-  exports: [RouterModule]
+  exports: [RouterModule],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}]
 })
 export class AppRoutingModule {}
