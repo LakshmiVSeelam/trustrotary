@@ -15,7 +15,7 @@
 
             <div class="col-lg-6 info p-5">
                 <h5 class="h2">{{ section.name }}</h5>
-                <p>
+                <p [innerHTML]="section.desc">
                     {{ section.desc }}
                 </p>
                 <a *ngIf="section.link" [href]="section.link" class="btn circle btn-theme border btn-sm" target="blank">Know More...</a>

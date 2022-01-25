@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare const donate_modal : any
 
 @Component({
   selector: 'app-team',
@@ -35,6 +36,10 @@ export class TeamComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  openPopup() {
+    donate_modal()
   }
 
 }

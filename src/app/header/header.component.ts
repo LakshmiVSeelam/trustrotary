@@ -31,12 +31,9 @@ export class HeaderComponent implements OnInit {
   openPopup() {
     donate_modal()
   }
-  // closePopup() {
-  //   this.displayStyle = "none";
-  // }
+
 
   ngOnInit(): void {
-    // donate_modal()
   }
 
 }
